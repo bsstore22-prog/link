@@ -11,6 +11,12 @@
 
   --whatsapp: #25d366;
   --whatsapp-dark: #1ebc59;
+  
+  --vodafone: #e60000;
+--vodafone-dark: #bd0000;
+
+--order: #ff7a00;
+--order-dark: #e36800;
 
   --instapay: #6c47ff;
   --instapay-dark: #5935df;
@@ -482,6 +488,46 @@ body {
 .btn-whatsapp:hover {
   background: var(--whatsapp-dark);
   box-shadow: 0 12px 28px rgba(37, 211, 102, 0.4);
+}
+
+/* Vodafone Cash */
+
+.btn-vodafone {
+  background: var(--vodafone);
+  box-shadow: 0 8px 22px rgba(230, 0, 0, 0.3);
+}
+
+.btn-vodafone:hover {
+  background: var(--vodafone-dark);
+  box-shadow: 0 12px 28px rgba(230, 0, 0, 0.42);
+}
+
+/* Order Now */
+
+.btn-order {
+  background:
+    linear-gradient(
+      135deg,
+      var(--order),
+      #ff3d71
+    );
+
+  box-shadow:
+    0 8px 22px
+    rgba(255, 122, 0, 0.32);
+}
+
+.btn-order:hover {
+  background:
+    linear-gradient(
+      135deg,
+      var(--order-dark),
+      #e62960
+    );
+
+  box-shadow:
+    0 12px 28px
+    rgba(255, 122, 0, 0.44);
 }
 
 /* InstaPay */
