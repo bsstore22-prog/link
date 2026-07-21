@@ -1,16 +1,16 @@
 {
   "basel": {
-    "name": "Basel Elsohaby",
-    "job": "Founder",
-    "image": "images/basel.jpg",
+    "name": "B&S Store",
+    "job": "create smart card",
+    "image": "images/bs.png",
     "whatsapp": "01003232820",
-    "vodafoneCash": "01000000000",
+    "vodafoneCash": "01003232820",
     "orderMessage": "السلام عليكم، أريد تنفيذ طلب من خلال B&S",
     "instapay": "https://ipn.eg/S/abdelrahman_elsohaby/instapay/4myqnA",
-    "facebook": "https://www.facebook.com/share/18irmzwFqu/?mibextid=wwXIfr",
-    "instagram": "https://www.instagram.com/baselelsohaby?utm_source=qr",
-    "tiktok": "https://vt.tiktok.com/ZSCw3UNmw/",
-    "x": "https://x.com/donateello?s=21"
+    "facebook": "",
+    "instagram": "",
+    "tiktok": "https://www.tiktok.com/@bs_store15?is_from_webapp=1&sender_device=pc",
+    "x": ""
   },
 
   "ahmed": {
