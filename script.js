@@ -48,6 +48,12 @@ const toastElement =
 const whatsappButton =
   document.getElementById("whatsappBtn");
 
+const vodafoneCashButton =
+  document.getElementById("vodafoneCashBtn");
+
+const orderNowButton =
+  document.getElementById("orderNowBtn");
+
 const instapayButton =
   document.getElementById("instapayBtn");
 
@@ -246,6 +252,15 @@ function setupButtons(profile) {
     profile.whatsapp
   );
 
+  setupVodafoneCashButton(
+    profile.vodafoneCash
+  );
+
+  setupOrderNowButton(
+    profile.whatsapp,
+    profile.orderMessage
+  );
+
   setupInstaPayButton(
     profile.instapay
   );
@@ -349,6 +364,131 @@ function formatWhatsAppNumber(phoneNumber) {
   }
 
   return digits;
+}
+/* ============================================================
+   VODAFONE CASH BUTTON
+============================================================ */
+
+function setupVodafoneCashButton(phoneNumber) {
+  /*
+    Hide the button if there is no Vodafone Cash number.
+  */
+  if (!phoneNumber) {
+    hideButton(vodafoneCashButton);
+    return;
+  }
+
+  vodafoneCashButton.addEventListener(
+    "click",
+    async function handleVodafoneCash() {
+      const cleanNumber =
+        String(phoneNumber)
+          .replace(/\D/g, "");
+
+      if (!cleanNumber) {
+        showToast(
+          "Vodafone Cash number is unavailable"
+        );
+
+        return;
+      }
+
+      await copyVodafoneCashNumber(
+        cleanNumber
+      );
+    }
+  );
+}
+
+async function copyVodafoneCashNumber(phoneNumber) {
+  try {
+    await navigator.clipboard.writeText(
+      phoneNumber
+    );
+
+    showToast(
+      "Vodafone Cash number copied!"
+    );
+
+  } catch (error) {
+    const temporaryInput =
+      document.createElement("input");
+
+    temporaryInput.value =
+      phoneNumber;
+
+    temporaryInput.style.position =
+      "fixed";
+
+    temporaryInput.style.opacity =
+      "0";
+
+    document.body.appendChild(
+      temporaryInput
+    );
+
+    temporaryInput.select();
+
+    temporaryInput.setSelectionRange(
+      0,
+      99999
+    );
+
+    document.execCommand("copy");
+
+    document.body.removeChild(
+      temporaryInput
+    );
+
+    showToast(
+      "Vodafone Cash number copied!"
+    );
+  }
+}
+/* ============================================================
+   ORDER NOW BUTTON
+============================================================ */
+
+function setupOrderNowButton(
+  phoneNumber,
+  orderMessage
+) {
+  /*
+    Hide the button if there is no WhatsApp number.
+  */
+  if (!phoneNumber) {
+    hideButton(orderNowButton);
+    return;
+  }
+
+  orderNowButton.addEventListener(
+    "click",
+    function openOrderWhatsApp() {
+      const formattedNumber =
+        formatWhatsAppNumber(
+          phoneNumber
+        );
+
+      if (!formattedNumber) {
+        showToast(
+          "WhatsApp number is unavailable"
+        );
+
+        return;
+      }
+
+      const message =
+        orderMessage ||
+        "السلام عليكم، أريد تنفيذ طلب من خلال B&S";
+
+      const encodedMessage =
+        encodeURIComponent(message);
+
+      openExternalLink(
+        `https://wa.me/${formattedNumber}?text=${encodedMessage}`
+      );
+    }
+  );
 }
 
 /* ============================================================
