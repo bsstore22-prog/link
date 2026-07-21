@@ -22,16 +22,26 @@
     "tiktok": "",
     "x": ""
   },
-  "mohamed": {
+    "mohamed": {
     "name": "Mohamed Mokpel",
-    "job": "لواء أركان حرب",
-    "image": "images/mohamed.jpg",
+    "job": "مدير اداره المطبوعات و النشر",
+    "image": "images/sir.jpg",
     "whatsapp": "01143330990",
     "instapay": "",
     "facebook": "https://www.facebook.com/share/18DLeBTTZq/ ",
     "instagram": "https://www.instagram.com/mokpelmohmed?igsh=cnp5ZHZjYjVvcnc0",
     "tiktok": "",
     "x": ""
-  }
-  
+  },
+  "azazy": {
+    "name": "Mohamed Azazy",
+    "job": "founder of  global ",
+    "image": "images/azazy.png",
+    "whatsapp": "01020825239",
+    "instapay": "",
+    "facebook": "https://www.facebook.com/share/1BUk3m4AdF/ ",
+    "instagram": "https://www.instagram.com/m7med_3zazy114?igsh=Zzd0dndsYjBmOTZ6",
+    "tiktok": " https://www.tiktok.com/@m7med3zazy114?_r=1&_t=ZS-98AXIc1iFzZ ",
+    "x": ""
+}
 }
