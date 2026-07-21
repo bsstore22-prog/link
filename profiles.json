@@ -1,0 +1,37 @@
+{
+  "basel": {
+    "name": "Basel Elsohaby",
+    "job": "Founder",
+    "image": "images/basel.jpg",
+    "whatsapp": "01003232820",
+    "instapay": "https://ipn.eg/S/abdelrahman_elsohaby/instapay/4myqnA",
+    "facebook": "https://www.facebook.com/share/18irmzwFqu/?mibextid=wwXIfr",
+    "instagram": "https://www.instagram.com/baselelsohaby?utm_source=qr",
+    "tiktok": "https://vt.tiktok.com/ZSCw3UNmw/",
+    "x": "https://x.com/donateello?s=21"
+  },
+
+  "ahmed": {
+    "name": "Ahmed Mohamed",
+    "job": "Graphic Designer",
+    "image": "images/ahmed.jpg",
+    "whatsapp": "01012345678",
+    "instapay": "@ahmed",
+    "facebook": "https://www.facebook.com/ahmed",
+    "instagram": "https://www.instagram.com/ahmed",
+    "tiktok": "",
+    "x": ""
+  },
+  "mohamed": {
+    "name": "Mohamed Mokpel",
+    "job": "لواء أركان حرب",
+    "image": "images/mohamed.jpg",
+    "whatsapp": "01143330990",
+    "instapay": "",
+    "facebook": "https://www.facebook.com/share/18DLeBTTZq/ ",
+    "instagram": "https://www.instagram.com/mokpelmohmed?igsh=cnp5ZHZjYjVvcnc0",
+    "tiktok": "",
+    "x": ""
+  }
+  
+}
